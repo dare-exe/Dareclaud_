@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookings — Admin · Hotel Green Land</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/admin/css/admin.css">
+</head>
+<body>
+  <div class="admin-layout">
+    <aside class="sidebar">
+      <div class="sidebar-brand">🏨 Green Land<small>ADMIN PANEL</small></div>
+      <nav>
+        <a href="dashboard.html">📊 Dashboard</a>
+        <a href="bookings.html">📋 Bookings</a>
+        <a href="rooms.html">🛏️ Rooms</a>
+        <a href="menu.html">🍽️ Menu</a>
+        <a href="gallery.html">🖼️ Gallery</a>
+        <a href="settings.html">⚙️ Settings</a>
+        <a href="/" target="_blank">🌐 View Website</a>
+      </nav>
+      <button class="logout">Log out</button>
+    </aside>
+    <main class="main">
+      <div class="main-head"><h1>Booking Queries</h1></div>
+      <div class="panel">
+        <div style="overflow-x:auto">
+          <table>
+            <thead>
+              <tr><th>#</th><th>Guest</th><th>Room</th><th>Dates</th><th>Message</th><th>Status</th><th>Received / Actions</th></tr>
+            </thead>
+            <tbody id="bookings-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="/admin/js/admin.js"></script>
+</body>
+</html>

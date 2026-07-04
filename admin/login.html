@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login — Hotel Green Land</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/admin/css/admin.css">
+</head>
+<body>
+  <div class="login-wrap">
+    <div class="login-card">
+      <div class="login-logo">G</div>
+      <h1>Hotel Green Land</h1>
+      <p class="sub">Admin Panel — sign in to continue</p>
+      <form id="login-form">
+        <div class="form-group" style="margin-bottom:14px">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" required autocomplete="username">
+        </div>
+        <div class="form-group" style="margin-bottom:22px">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="btn btn-green" style="width:100%">Sign In</button>
+        <div id="login-msg" class="msg"></div>
+      </form>
+      <p style="margin-top:20px;text-align:center;font-size:0.8rem;color:var(--muted)">
+        <a href="/" style="color:var(--primary)">← Back to website</a>
+      </p>
+    </div>
+  </div>
+  <script src="/admin/js/admin.js"></script>
+</body>
+</html>

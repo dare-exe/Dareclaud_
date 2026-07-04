@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rooms — Admin · Hotel Green Land</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/admin/css/admin.css">
+</head>
+<body>
+  <div class="admin-layout">
+    <aside class="sidebar">
+      <div class="sidebar-brand">🏨 Green Land<small>ADMIN PANEL</small></div>
+      <nav>
+        <a href="dashboard.html">📊 Dashboard</a>
+        <a href="bookings.html">📋 Bookings</a>
+        <a href="rooms.html">🛏️ Rooms</a>
+        <a href="menu.html">🍽️ Menu</a>
+        <a href="gallery.html">🖼️ Gallery</a>
+        <a href="settings.html">⚙️ Settings</a>
+        <a href="/" target="_blank">🌐 View Website</a>
+      </nav>
+      <button class="logout">Log out</button>
+    </aside>
+    <main class="main">
+      <div class="main-head"><h1>Manage Rooms</h1></div>
+
+      <div class="panel">
+        <h2>Add / Edit Room</h2>
+        <form id="room-form" enctype="multipart/form-data">
+          <input type="hidden" name="id" value="">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Room Name *</label>
+              <input name="name" type="text" required placeholder="e.g. Deluxe Room">
+            </div>
+            <div class="form-group">
+              <label>Price per Night (Rs.)</label>
+              <input name="price" type="number" min="0" step="50" placeholder="2500">
+            </div>
+            <div class="form-group">
+              <label>Capacity (guests)</label>
+              <input name="capacity" type="number" min="1" max="20" value="2">
+            </div>
+            <div class="form-group">
+              <label>Image (optional)</label>
+              <input name="image" type="file" accept="image/*">
+            </div>
+            <div class="form-group full">
+              <label>Features (comma separated)</label>
+              <input name="features" type="text" placeholder="AC, Queen Bed, TV, WiFi">
+            </div>
+            <div class="form-group full">
+              <label>Description</label>
+              <textarea name="description" rows="3" placeholder="Short description of the room…"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-green" style="margin-top:16px">Add Room</button>
+          <div id="room-msg" class="msg"></div>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h2>All Rooms</h2>
+        <div style="overflow-x:auto">
+          <table>
+            <thead><tr><th>Image</th><th>Room</th><th>Price</th><th>Capacity</th><th>Actions</th></tr></thead>
+            <tbody id="rooms-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="/admin/js/admin.js"></script>
+</body>
+</html>
