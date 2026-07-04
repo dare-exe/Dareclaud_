@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b5e3b"/>
+      <stop offset="1" stop-color="#2e7d4f"/>
+    </linearGradient>
+    <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1.5" fill="rgba(255,255,255,0.12)"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="700" fill="url(#g)"/>
+  <rect width="900" height="700" fill="url(#dots)"/>
+  <circle cx="765" cy="140" r="244.99999999999997" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="90" cy="630" r="280" fill="rgba(0,0,0,0.08)"/>
+  <text x="50%" y="42%" text-anchor="middle" font-size="98.00000000000001" font-family="Georgia, serif">🛎️</text>
+  <text x="50%" y="58%" text-anchor="middle" fill="#ffffff" font-size="52.5" font-weight="bold" font-family="Georgia, 'Times New Roman', serif">Reception & Lobby</text>
+  <text x="50%" y="67%" text-anchor="middle" fill="#d4a941" font-size="28" font-family="Arial, sans-serif" letter-spacing="3">WARM WELCOME</text>
+</svg>
